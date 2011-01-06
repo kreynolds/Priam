@@ -1,0 +1,21 @@
+production:
+  adapter: cassandra
+  host:
+  - 127.0.0.1:9160
+  - 127.0.0.2:9160
+  keyspace: keyspace_prod
+  transport: framed
+  retries: 3
+  timeout: 2
+
+development:
+  adapter: cassandra
+  host: 127.0.0.1
+  port: 9160
+  keyspace: keyspace_dev
+  transport: framed
+  retries: 3
+  timeout: 2
+
+test:
+  adapter: mock

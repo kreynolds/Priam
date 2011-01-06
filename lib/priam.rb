@@ -1,0 +1,1 @@
+require 'priam/base'
